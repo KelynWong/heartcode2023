@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAMING</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+    <style>
+        /* Add the styles */
+        .jumbotron {
+            background: url("./img/fireee.jpg") no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .title {
+            font-size: 100px;
+            margin-top:-45px;
+        }
+
+        #THEBURNING {
+            font-style: italic;
+
+        }
+
+        .image {
+            height: 30px;
+        }
+    </style>
+    
+    <!-- CSS only -->
+</head>
+
+
+<body>
+
+     <!-- Add the navbar -->
+     <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+         <div id="PROJECT HEARTCODE" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+            <a class="navbar-brand fw-bold " href="#">Project Heartcode</a>
+         </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div style="font-family: Georgia, 'Times New Roman', Times, serif;" class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active fw-semibold" aria-current="page" href="./defination.html">What is flaming?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./liveflaming.html">The Flaming Experience</a>
+              </li>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cards
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              
+          </div>
+        </div>
+      </nav>
+    
+    <!-- Add the Jumbotron -->
+    <div class="p-5 mb-4 rounded-3 text-black jumbotron">
+        <div class="container-fluid py-5">
+          <div style=" margin-bottom:0px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            <p class="display-5 fw-bold text-light title">THE FLAMING</p>
+            <p class="display-5 fw-bold text-light title">EXPERIENCE.</p>
+
+            <h1><div id="THEBURNING" class="fw-bold text-light">  - FEEL THE BURNING SENSATION -</div></h1>
+            <br>
+            <br>
+
+            <button type="button" class="btn btn-primary btn-lg col-3" id="liveToastBtn">IGNITE THE FLAMES</button>
+
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div class="toast liveToast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                        <img class="image" src="./img/icon.jpg" class="rounded me-2" alt="...">
+                        <strong class="me-auto">USER234RDWKF</strong>
+                        <small>3 min ago</small>
+                        <button id="liveToastBtn" type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        Seriously, your opinions are so dumb. Do you even think before you speak?🙄
+                    </div>
+                </div>
+
+                <div class="toast liveToast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                        <img class="image" src="./img/icon.jpg" class="rounded me-2" alt="...">
+                        <strong class="me-auto">USER234RDWKF</strong>
+                        <small>2 mins ago</small>
+                        <button id="liveToastBtn" type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        It's like debating with a toddler. Maybe grow a brain before spewing nonsense next time.👀👀👀👀👀👀
+                    </div>
+                </div>
+                
+                <div class="toast liveToast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                        <img class="image" src="./img/icon.jpg" class="rounded me-2" alt="...">
+                        <strong class="me-auto">USER234RDWKF</strong>
+                        <small>1 mins ago</small>
+                        <button id="liveToastBtn" type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        Save your ignorance for someone who cares. I'm outta here, dealing with you is a waste of my intellect.🤮🤮🤮🤮🤮🤮
+                    </div>
+                </div>
+                
+                
+            </div>
+
+
+    
+           
+        
+        </div>
+      </div>
+
+      
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>   
+    <script>
+        const toastTrigger = document.getElementById('liveToastBtn')
+        const toastLiveExample = document.getElementsByClassName('liveToast')
+
+        if (toastTrigger) {
+            for (let i = 0; i < toastLiveExample.length; i++) {
+                const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample[i])
+                toastTrigger.addEventListener('click', () => {
+                    toastBootstrap.show()
+                })
+            }
+        }
+    </script>
+</body>
+</html>
