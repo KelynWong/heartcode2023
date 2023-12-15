@@ -21,6 +21,66 @@
             font-size: 100px;
             margin-top:-45px;
         }
+
+        @keyframes heartbeat {
+            0% {
+                animation-timing-function: ease-out;
+                transform: scale(1);
+                transform-origin: center center;
+            }
+
+            10% {
+                animation-timing-function: ease-in;
+                transform: scale(0.91);
+            }
+
+            17% {
+                animation-timing-function: ease-out;
+                transform: scale(0.98);
+            }
+
+            33% {
+                animation-timing-function: ease-in;
+                transform: scale(0.87);
+            }
+
+            45% {
+                animation-timing-function: ease-out;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes shake {
+            0%,
+            100% {
+                transform: rotate(0deg);
+                transform-origin: 50% 50%;
+            }
+
+            10% {
+                transform: rotate(8deg);
+            }
+
+            20%,
+            40%,
+            60% {
+                transform: rotate(-10deg);
+            }
+
+            30%,
+            50%,
+            70% {
+                transform: rotate(10deg);
+            }
+
+            80% {
+                transform: rotate(-8deg);
+            }
+
+            90% {
+                transform: rotate(8deg);
+            }
+        }
     </style>
     
     <!-- CSS only -->
@@ -58,22 +118,17 @@
     
 
     <!-- Add the Jumbotron -->
-    <div class="p-5 mb-4 rounded-3 text-black jumbotron">
+    <div class="p-5 mb-0 text-black jumbotron">
         <div class="container-fluid py-5">
-          <div style="font-family 
-        : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;">
-            <p class="display-5 fw-bold text-light" id="title">CYBERBULLYING;</p>
-            <p class="display-5 fw-bold text-light" id="title">FLAMING.</p>
+          <div style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;">
+            <p style="animation: shake 5s ease 0s infinite normal forwards;" class="display-5 fw-bold text-light text-center" id="title">CYBERBULLYING;</p>
+            <p style="animation: heartbeat 5s ease 0s infinite normal forwards;" class="display-5 fw-bold text-light text-center mt-3" id="title">FLAMING 🔥</p>
           
           </div>
           
         
         </div>
       </div>
-
-    
-          
-    </div>
 
     
     <!-- JavaScript Bundle with Popper -->
